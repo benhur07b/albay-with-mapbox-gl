@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+        <title>GeoVisual Communication Challenge -- Topography, Vegetation, and Temperature</title>
+        <link rel="shortcut icon" type="image/png" href="favicon.png">
+
+        <!-- OG Meta -->
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="GeoVisual Communication Challenge -- Topography, Vegetation, and Temperature">
+        <meta property="og:description" content="This is my geovisualization combining the topography, vegetation, and temperature of the province of Albay as part of our GmE 210 Spatial Visualization class. I used 10-m SAR DEM from LiPAD together with MODIS Normalized Difference Vegetation Index and Land Surface Temperatue data available from EarthExplorer. The webmap is uses Mapbox. Let me know what you think!">
+        <meta property="og:image" content="static/media/images/topo.png"/>
+
+        <!-- Twitter OG -->
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:title" content="GeoVisual Communication Challenge -- Topography, Vegetation, and Temperature">
+        <meta property="twitter:description" content="This is my geovisualization combining the topography, vegetation, and temperature of the province of Albay as part of our GmE 210 Spatial Visualization class. I used 10-m SAR DEM from LiPAD together with MODIS Normalized Difference Vegetation Index and Land Surface Temperatue data available from EarthExplorer. The webmap is uses Mapbox. Let me know what you think!">
+        <meta name="twitter:image" content="favicon.png"/>
+
+        <!-- Bootstrap Core CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+
+        <link href="static/css/main.css" rel="stylesheet">
+
+        <!-- Mapbox GL JS -->
+        <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.42.2/mapbox-gl.js'></script>
+        <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.42.2/mapbox-gl.css' rel='stylesheet' />
+
+    </head>
+
+    <body>
+        <div id='map'></div>
+        <div class='map-overlay' id='features'><h2>Topography, NDVI, and LST of Albay, Philippines</h2><div id='pd'><p>Hover over a cell!</p></div></div>
+        <div class='map-overlay' id='legend'><h3>Legend</h3><p>Height of cell = elevation</p></div>
+        <script src="static/js/scripts/albay-map.js"></script>
+    </body>
+
+</html>
