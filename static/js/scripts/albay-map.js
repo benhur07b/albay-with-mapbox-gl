@@ -113,7 +113,7 @@ map.on('load', function() {
         'source': 'albay-source',
         'paint': {
             'line-color': 'white',
-            'line-width': 1
+            'line-width': 0.5
             }
     });
 
