@@ -134,8 +134,8 @@ map.on('load', function() {
     // });
 
     // Legends
-    var layers = ['↑ NDVI and ↑ LST', '↓ NDVI and ↑ LST', '↓ NDVI and LST ↑', '↓ DNVI and ↓ LST'];
-    var colors = ['yellow', 'red', 'cyan', 'magenta'];
+    var layers = ['↑ NDVI and ↑ LST', '↑ NDVI and ↓ LST', '↓ NDVI and ↑ LST', '↓ DNVI and ↓ LST'];
+    var colors = ['yellow', 'cyan', 'red', 'magenta'];
 
     for (i = 0; i < layers.length; i++) {
         var layer = layers[i];
