@@ -5,7 +5,7 @@ var map = new mapboxgl.Map({
     zoom: 10.48,
     bearing: 36.8,
     pitch: 60,
-    hash: true,
+    hash: false,
     container: 'map'
 });
 
